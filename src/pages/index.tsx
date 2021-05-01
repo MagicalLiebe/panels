@@ -33,12 +33,8 @@ const Home: VFC = () => {
   const { data } = useSWR("/api/data", fetcher, { refreshInterval: 1000 });
 
   const update = async () => {
-    const p: Panels[] = [];
     if (data) {
-      data.map((d: Panels) => {
-        p.push({ id: d.id, text: d.text, selected: d.selected, finished: d.finished });
-      });
-      setPanels(p);
+      setPanels(data);
     }
   };
 
