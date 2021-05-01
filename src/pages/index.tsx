@@ -23,9 +23,11 @@ const Home: VFC = () => {
     }
   };
 
-  const fetcher = async (url: string): Promise<boolean | null> => {
-    const response = await fetch(url);
-    return response.json();
+  const fetcher = async (url: string) => {
+    const panelData = await fetch(url).then((res) => {
+      return res.json();
+    });
+    return panelData.panels;
   };
 
   const { data } = useSWR("/api/data", fetcher, { refreshInterval: 1000 });
@@ -33,7 +35,7 @@ const Home: VFC = () => {
   const update = async () => {
     const p: Panels[] = [];
     if (data) {
-      data.panels.map((d) => {
+      data.map((d: Panels) => {
         p.push({ id: d.id, text: d.text, selected: d.selected, finished: d.finished });
       });
       setPanels(p);
