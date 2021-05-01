@@ -1,5 +1,5 @@
 {
-  "name": "nexst-tailwind",
+  "name": "panels",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -29,9 +29,11 @@
     "printWidth": 120
   },
   "dependencies": {
+    "@supabase/supabase-js": "^1.11.9",
     "next": "10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "swr": "^0.5.5"
   },
   "devDependencies": {
     "@testing-library/react": "11.2.6",

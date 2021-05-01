@@ -2,8 +2,8 @@ import type { VFC } from "react";
 
 export const Footer: VFC = () => {
   return (
-    <footer>
-      <small>&copy; 20xx example</small>
+    <footer className="bg-gray-200">
+      <small>&copy; 2021 @reeve0930</small>
     </footer>
   );
 };

@@ -1,8 +1,8 @@
 import type { VFC } from "react";
 import { Layout } from "src/components/layout";
 
-const About: VFC = () => {
-  return <Layout>About</Layout>;
+const Admin: VFC = () => {
+  return <Layout>Admin</Layout>;
 };
 
-export default About;
+export default Admin;

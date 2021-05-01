@@ -3,6 +3,12 @@ module.exports = {
   purge: ["./src/**/*.{ts,tsx}"],
   darkMode: false, // 'media' or 'class'
   theme: { extend: {} },
-  variants: { extend: {} },
+  variants: {
+    extend: {
+      backgroundColor: ["focus"],
+      borderColor: ["focus"],
+      borderWidth: ["focus"],
+    },
+  },
   plugins: [],
 };
