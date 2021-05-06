@@ -4,11 +4,7 @@ module.exports = {
   darkMode: false, // 'media' or 'class'
   theme: { extend: {} },
   variants: {
-    extend: {
-      backgroundColor: ["focus"],
-      borderColor: ["focus"],
-      borderWidth: ["focus"],
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
