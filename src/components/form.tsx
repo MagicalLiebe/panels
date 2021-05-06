@@ -16,7 +16,7 @@ export const Form: VFC = () => {
     <form className="mt-6 mr-2 ml-2 flex justify-center h-12">
       <input
         type="text"
-        className="w-96 mr-2 text-gray-500 text-center border-2 border-gray-500"
+        className="w-96 mr-2 text-gray-500 text-center border-2 border-gray-500 bg-white"
         value={newText}
         // eslint-disable-next-line react/jsx-handler-names
         onChange={(e) => {
@@ -25,7 +25,7 @@ export const Form: VFC = () => {
         }}
       />
       <button
-        className="px-4 w-auto border-2 rounded-md text-gray-500 border-gray-500"
+        className="px-4 w-auto border-2 rounded-md text-gray-500 border-gray-500 bg-white"
         // eslint-disable-next-line react/jsx-handler-names
         onClick={(e) => {
           e.preventDefault();
