@@ -37,25 +37,28 @@ const AdminContainer = ({ children }: { children: React.ReactNode }) => {
     return (
       <>
         <p className="text-center bg-red-100 text-gray-500 text-lg w-full mb-4">Admin Mode</p>
-        <div className="grid grid-cols-2 justify-items-stretch pr-2 pl-2">
-          <button
-            className="bg-blue-100 m-2 text-gray-500 h-10 text-lg rounded-2xl"
-            onClick={() => {
-              toggleFinish(select);
-            }}
-          >
-            Toggle Status
-          </button>
-          <button
-            className="bg-blue-100 m-2 text-gray-500 h-10 text-lg rounded-2xl"
-            onClick={() => {
-              deletePanel(select);
-            }}
-          >
-            Delete
-          </button>
+        <div className="sticky top-0 bg-gray-50 mb-2">
+          <div className="grid grid-cols-2 justify-items-stretch mr-2 ml-2">
+            <button
+              className="bg-blue-100 m-2 text-gray-500 h-10 text-lg rounded-2xl border-blue-200 border-2"
+              onClick={() => {
+                toggleFinish(select);
+              }}
+            >
+              Toggle Status
+            </button>
+            <button
+              className="bg-blue-100 m-2 text-gray-500 h-10 text-lg rounded-2xl border-blue-200 border-2"
+              onClick={() => {
+                deletePanel(select);
+              }}
+            >
+              Delete
+            </button>
+          </div>
+          <Form />
+          <hr className="mt-4" />
         </div>
-        <Form />
         <Panels select={select} setSelect={setSelect} />
         <div className="flex justify-end m-4 h-10">
           <button

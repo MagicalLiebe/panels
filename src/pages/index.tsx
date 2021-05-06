@@ -9,7 +9,10 @@ const Home: VFC = () => {
 
   return (
     <Layout>
-      <Form />
+      <div className="sticky top-0 bg-gray-50 pt-2">
+        <Form />
+        <hr className="mt-4" />
+      </div>
       <Panels select={select} setSelect={setSelect} />
     </Layout>
   );
