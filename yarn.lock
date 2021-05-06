@@ -670,7 +670,7 @@
   dependencies:
     cross-fetch "^3.1.0"
 
-"@supabase/supabase-js@^1.11.9":
+"@supabase/supabase-js@1.11.9":
   version "1.11.9"
   resolved "https://registry.yarnpkg.com/@supabase/supabase-js/-/supabase-js-1.11.9.tgz#55ac470be911ba64395a3311bce1902436f328f6"
   integrity sha512-ovv/KkaRZLSDo/DbeeNHwG7iL5mJXm3UGG6x3AEU4r2FJ75wa6/dhmNWWLdUmc+eWIpfUgR/XpW7xzB93EgM1w==
@@ -679,6 +679,19 @@
     "@supabase/postgrest-js" "^0.28.1"
     "@supabase/realtime-js" "^1.0.9"
     "@supabase/storage-js" "^1.0.2"
+
+"@supabase/ui@0.24.2":
+  version "0.24.2"
+  resolved "https://registry.yarnpkg.com/@supabase/ui/-/ui-0.24.2.tgz#1e9041c6952bd0c6e8ae2d57145cab1d29bdff76"
+  integrity sha512-8bQSSsOSDseatszuxDM/QdnE24+Rmi3BBABWeBLd0OLsB/PEcri8/WpCHnxhaspwD2F9eqlBKsTAk4St6/2shQ==
+  dependencies:
+    lodash "^4.17.20"
+    prop-types "^15.7.2"
+
+"@tailwindcss/line-clamp@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.2.0.tgz#7f30f26ed3835d64d1eb5a9b0d60cf5291dd2a3b"
+  integrity sha512-+jXSdRK3/9V/BCPCr+iNpMMhxWMMv62vn/AS2b3/ClmueGuhCijW3bUwO1IiHnE7uCaF74Sli8jUCv9djwvpLg==
 
 "@testing-library/dom@^7.28.1":
   version "7.30.4"
@@ -4186,7 +4199,7 @@ lodash.truncate@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
   integrity sha1-WjUNoLERO4N+z//VgSy+WNbq4ZM=
 
-lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.21, lodash@^4.7.0:
+lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -6067,7 +6080,7 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-swr@^0.5.5:
+swr@0.5.5:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/swr/-/swr-0.5.5.tgz#c72c1615765f33570a16bbb13699e3ac87eaaa3a"
   integrity sha512-u4mUorK9Ipt+6LEITvWRWiRWAQjAysI6cHxbMmMV1dIdDzxMnswWo1CyGoyBHXX91CchxcuoqgFZ/ycx+YfhCA==

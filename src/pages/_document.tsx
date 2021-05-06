@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
-          <meta name="description" content="Hello, World!" />
+          <meta name="description" content="Welcome to Panels!" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>

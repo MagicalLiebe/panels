@@ -6,7 +6,7 @@ export const Layout: VFC<{ children: ReactNode }> = (props) => {
   return (
     <div className="grid grid-rows-[auto,1fr,auto] min-h-screen">
       <Header />
-      <main className="bg-gray-100">{props.children}</main>
+      <main className="bg-gray-50">{props.children}</main>
       <Footer />
     </div>
   );
